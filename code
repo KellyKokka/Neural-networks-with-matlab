@@ -17,6 +17,7 @@ train7 = dlmread('7trn.SSV');
 test7 = dlmread('7tst.SSV');
 
 %change classification value
+
 train1(train1(:,17)==255,17) = 1;
 test1(test1(:,17) == 255,17) = 1;
 train2(train2(:,17)==255,17) = 1;
